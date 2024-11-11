@@ -26,7 +26,7 @@ print(f"Третья четверть: {third_quarter}")
 print(f"Четвертая четверть: {fourth_quarter}")
 
 
-# Больше предыдущего
+##### Больше предыдущего
 # put your python code here
 # Функция для подсчета количества чисел, которые больше предшествующего им в списке
 def count_greater_than_previous(numbers):
@@ -46,7 +46,9 @@ numbers = list(map(int, input_string.split()))
 result = count_greater_than_previous(numbers)
 print(result)
 
-# Назад, вперёд и наоборот
+
+
+### Назад, вперёд и наоборот
 # put your python code here
 # Функция для обмена местами соседних элементов списка
 def swap_adjacent_elements(numbers):
@@ -66,7 +68,9 @@ swapped_numbers = swap_adjacent_elements(numbers)
 # Вывод измененного списка
 print(' '.join(map(str, swapped_numbers)))
 
-# Сдвиг в развитии
+
+
+#### Сдвиг в развитии
 # put your python code here
 # Чтение строки с числами из входных данных
 input_string = input()
@@ -83,7 +87,9 @@ if numbers:
 # Вывод измененного списка
 print(' '.join(map(str, numbers)))
 
-# Различные элементы
+
+
+#### Различные элементы
 # put your python code here
 # Чтение строки с числами из входных данных
 input_string = input()
@@ -100,7 +106,9 @@ unique_count = len(unique_numbers)
 # Вывод количества уникальных элементов
 print(unique_count)
 
-# Произведение чисел
+
+
+### Произведение чисел
 # put your python code here
 # Чтение количества чисел в наборе
 n = int(input())
@@ -132,7 +140,9 @@ if found:
 else:
     print("НЕТ")
 
-# Камень, ножницы, бумага
+
+
+### Камень, ножницы, бумага
 # put your python code here
 # Чтение выбора Тимура и Руслана
 timur_choice = input().strip().lower()
@@ -149,7 +159,9 @@ else:
     else:
         print("Руслан")
 
-# Камень, ножницы, бумага, ящерица, Спок
+
+
+### Камень, ножницы, бумага, ящерица, Спок
 # Чтение выбора Тимура и Руслана
 timur_choice = input().strip().lower()
 ruslan_choice = input().strip().lower()
@@ -162,7 +174,6 @@ winning_combinations = {
     "ящерица": ["спок", "бумага"],
     "спок": ["ножницы", "камень"]
 }
-
 # Определение результата игры
 if timur_choice == ruslan_choice:
     print("ничья")
@@ -171,7 +182,9 @@ elif ruslan_choice in winning_combinations[timur_choice]:
 else:
     print("Руслан")
 
-# Орел и решка
+
+
+### Орел и решка
 # put your python code here
 # Считываем строку текста
 sequence = input().strip()
@@ -195,7 +208,9 @@ for char in sequence:
 # Выводим максимальную последовательность подряд идущих Решек
 print(max_streak)
 
-# Кремниевая долина
+
+
+### Кремниевая долина
 # Считываем количество холодильников
 n = int(input().strip())
 
@@ -222,7 +237,9 @@ for i in range(1, n + 1):
 # Выводим номера зараженных холодильников
 print(" ".join(map(str, infected_fridges)))
 
-# Роскомнадзор запретил букву а
+
+
+#### Роскомнадзор запретил букву а
 def song_restriction(word):
     # Начальная строка
     initial_phrase = word + " запретил букву"
